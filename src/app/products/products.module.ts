@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { AutoComponent } from './auto/auto.component';
 import { ProductsRoutingModule } from './products-routing.module';
+import { DataGeneratorComponent } from './data-generator/data-generator.component';
 
 @NgModule({
     imports: [
         CommonModule,
-        FormsModule,
         ProductsRoutingModule
     ],
     declarations: [
-        AutoComponent
+        DataGeneratorComponent
     ]
 })
 export class ProductsModule { }

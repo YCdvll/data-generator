@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AutoComponent } from './auto/auto.component';
+import { DataGeneratorComponent } from './data-generator/data-generator.component';
 
 const productsRoutes: Routes = [
     {
-        path: 'Auto', component: AutoComponent,
+        path: 'DataGenerator', component: DataGeneratorComponent,
     }
 ]
 
