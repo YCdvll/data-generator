@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,14 @@ import { PrimeNGConfig } from 'primeng/api';
 export class AppComponent {
   constructor(private primengConfig: PrimeNGConfig) { }
 
+  items: MenuItem[] = [];
+
   ngOnInit() {
     this.primengConfig.ripple = true;
-  }
 
-  title = 'angular starter';
+    this.items = [
+      { label: 'Home', routerLink: '/' },
+      { label: 'Data Generator', routerLink: 'Products/DataGenerator' },
+    ];
+  }
 }

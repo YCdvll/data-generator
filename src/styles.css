@@ -10,7 +10,6 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
-.red {
-    color: red;
+.container {
+    padding: 20px;
 }
