@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from 'src/app/services/app-service.service';
 
 @Component({
   selector: 'app-data-generator',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataGeneratorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit(): void {
+  }
+
+  getData() {
+    this.appService.getData("").subscribe(callback => {
+      console.log(callback);
+    });
   }
 
 }
