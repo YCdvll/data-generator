@@ -21,7 +21,7 @@ import { HomeComponent } from './home/home.component';
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

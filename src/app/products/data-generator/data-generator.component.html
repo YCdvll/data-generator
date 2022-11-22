@@ -3,3 +3,9 @@
 </div>
 
 <button (click)="getData()">GetDate</button>
+<input [(ngModel)]="name">
+<button (click)="getName()">GetName</button>
+
+<p>{{response}}</p>
+
+<inputs-component (visible)="true" (data)="name"></inputs-component>

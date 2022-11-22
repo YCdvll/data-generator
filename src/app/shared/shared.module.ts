@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [],
@@ -12,11 +14,15 @@ import { HttpClientModule } from '@angular/common/http';
     MenubarModule,
     ButtonModule,
     HttpClientModule,
+    FormsModule,
+    InputTextModule,
   ],
   exports: [
     ButtonModule,
     MenubarModule,
     HttpClientModule,
+    FormsModule,
+    InputTextModule
   ]
 })
 export class SharedModule { }
